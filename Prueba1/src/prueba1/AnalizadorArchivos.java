@@ -6,7 +6,6 @@ package prueba1;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 import java.io.File;
 
 /**
@@ -80,7 +79,7 @@ public class AnalizadorArchivos extends JFrame {
         btnBuscar.addActionListener(e -> {
             if (!validar()) return;
             if (txtBusqueda.getText().trim().isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Ingrese un texto de búsqueda.");
+                JOptionPane.showMessageDialog(this, "Ingresar texto de Busqueda.");
                 return;
             }
             txtResultados.setText(logica.buscarArchivosPorNombre(

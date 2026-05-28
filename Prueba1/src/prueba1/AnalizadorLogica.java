@@ -57,7 +57,7 @@ public class AnalizadorLogica {
         List<String> encontrados = new ArrayList<>();
         buscarRecursivo(dirRaiz, textoBusq.toLowerCase(), encontrados);
         if (encontrados.isEmpty())
-            return "No se encontraron archivos que coincidan con los criterios.";
+            return "No se encontraron archivos que coincidan con el texto.";
         StringBuilder sb = new StringBuilder("Resultados para \"" + textoBusq + "\":\n\n");
         for (String ruta : encontrados) sb.append(ruta).append("\n");
         return sb.toString();
